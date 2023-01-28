@@ -32,7 +32,7 @@ const getPostsFromApi = async (show, print, start, limit) => {
     .then((response) => response.json())
     .then((response) => {
       posts = response.results; // сохраняем результаты в массив posts
-      show(print, start, limit); // вызываем функцию отображение постов
+      show(print, start, limit); // вызываем функцию отображения постов
     });
 };
 
